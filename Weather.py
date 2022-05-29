@@ -5,14 +5,18 @@ def Weather():
 #        python -m pip install requests
 
 # importing requests and json
-   import requests, json, time
+   import requests
+   import json
+   import time
+   
    # base URL
    BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
    # City Name (You can replace this with your city if you wish)
    CITY = "St. John's"
    # API key (Needs to be a valid key, you can sign up for free to get one)
    API_KEY = "af3f11579680280547897fa6eb2352eb"
-   # updating the URL (NOTE: if this doesn't work, go the website to check how they denote your city ie: abbreviations etc)
+   # updating the URL (NOTE: if this doesn't work, go the website to check how
+   # they denote your city ie: abbreviations etc)
    URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY
    # HTTP request
    response = requests.get(URL)
@@ -55,7 +59,10 @@ def Weather():
       # showing the error message
       print("Error in the HTTP request")
       time.sleep(2)
-      print('\nSally: Oh... guess that\'s not working then. Just have to use the old, \'Stick your head out the window\', method I guess lol')
+      print(
+         "Sally: Oh... guess that's not working then. Just have to use the old, 'Stick"
+         "your head out the window', method I guess lol"
+      )
 
 def main():
    Weather()
