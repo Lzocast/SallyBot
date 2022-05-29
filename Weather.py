@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def Weather():
 
 # NOTE: For this to work you need to have installed the 'requests' module for python:
