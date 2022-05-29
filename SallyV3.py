@@ -7,18 +7,22 @@
 
 # Eventual plan to have the D&D game less linear. Current attempts cause broken loops or crashes.
 
-__version__: '3' # REV date 22/02/2022
+# __version__: '3' # REV date 22/02/2022
 
 from os import execl, execle, execlp, execv
 import time
 from datetime import datetime
 import random
-# Sys allows the appending of non-standard/selfmade modules from outside directory of current python file
-# If you don't have the saytime module then comment out everything from here till the definition for rules and delete
-# the call for the saytime_t().words() modules in the Main function
+
+# Sys allows the appending of non-standard/selfmade modules from outside
+# directory of current python file If you don't have the saytime module then
+# comment out everything from here till the definition for rules and delete the
+# call for the saytime_t().words() modules in the Main function
+
 import sys
+
 # Use the below example, altered to match where you have stored the saytime module:
-        # ie: sys.path.append('D:\Python Course\Essentials\Chapter 2') 
+# ie: sys.path.append('D:\Python Course\Essentials\Chapter 2') 
 # # Can be commented out if saytime.py is in same directory as Sally
 # below imports all the classes/abilities of the below custom made module
 from saytime import *
