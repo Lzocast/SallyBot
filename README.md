@@ -1,3 +1,5 @@
+[Changes contributed by PSherren merged into Main Branch May 2022]
+
 Hello, and thank you for taking the time to learn about Sally.
 
 This is a first time programmer's attempt to merge various learning projects into a comprehensive and interactive 'chatbot'. 
